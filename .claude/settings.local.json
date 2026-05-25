@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/nanditamalhotra/.nvm/**)",
+      "Bash(brew list *)",
+      "WebFetch(domain:nanditamalhotra.com)",
+      "Bash(/usr/local/bin/node --version)",
+      "WebFetch(domain:rishi.design)",
+      "WebFetch(domain:bradleyziffer.com)",
+      "WebFetch(domain:www.linkedin.com)"
+    ]
+  }
+}
