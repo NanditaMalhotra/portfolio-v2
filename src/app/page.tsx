@@ -2,16 +2,10 @@
 import Hero from "@/components/Hero";
 import ProjectGrid from "@/components/ProjectGrid";
 import ExperimentsCard from "@/components/ExperimentsCard";
-import IntroHero from "@/components/IntroHero";
 
 export default function Home() {
   return (
-    <>
-      <IntroHero />
-
-      {/* Homepage content — slides over the hero as user scrolls */}
-      <div className="relative bg-cream" style={{ zIndex: 10 }}>
-      <div className="max-w-6xl mx-auto w-full px-6 md:px-12 lg:px-16">
+    <div className="max-w-6xl mx-auto w-full px-6 md:px-12 lg:px-16">
 
       {/* ── Mobile layout ── */}
       <div className="lg:hidden">
@@ -78,8 +72,6 @@ export default function Home() {
 
       </div>
 
-      </div>
-      </div>
-    </>
+    </div>
   );
 }
