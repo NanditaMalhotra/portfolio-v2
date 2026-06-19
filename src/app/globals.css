@@ -4,7 +4,7 @@
   --color-cream: #ffffff;
   --color-ink: #111111;
   --color-stone: #6B6880;
-  --color-accent: #653FD4;
+  --color-accent: #C98A00;
   --color-parchment: #F3F2F8;
   --color-border: #E8E8EC;
 
@@ -18,7 +18,7 @@ html {
 
 
 body {
-  background-color: #fff;
+  background-color: #FAFAFA;
   color: #111111;
   font-family: var(--font-hanken), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-  background-color: #EDE8FF;
+  background-color: #FDF0C0;
 }
 
 /* Purple-circle-through-text effect — position driven by CSS custom props set via JS */
@@ -35,7 +35,7 @@ body {
   --cy: 50%;
   background: radial-gradient(
     circle 240px at var(--cx) var(--cy),
-    #653FD4 0%,
+    #C98A00 0%,
     #111111 65%
   );
   -webkit-background-clip: text;

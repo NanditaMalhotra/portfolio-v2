@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-cream">
-      <div className="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div className="w-full px-8 md:px-16 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <p className="font-display text-lg text-ink">Nandita Malhotra</p>
 
         <div className="flex flex-wrap items-center gap-6 text-sm text-stone">

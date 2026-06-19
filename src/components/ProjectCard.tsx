@@ -61,9 +61,10 @@ export default function ProjectCard({
   const isComingSoon = project.status === "coming-soon";
 
   const content = (
-    <>
+    <div className="bg-white border border-border rounded-3xl p-3 flex flex-col gap-3">
+      {/* Thumbnail */}
       <div
-        className="relative overflow-hidden rounded-3xl w-full aspect-[1157/702] border border-border"
+        className="relative overflow-hidden rounded-2xl w-full aspect-[1157/702]"
         style={{ backgroundColor: project.coverColor }}
       >
         {project.coverVideo && !isComingSoon && (
@@ -92,10 +93,8 @@ export default function ProjectCard({
           </div>
         ) : (
           <>
-            {/* Hover darken */}
             <div className="absolute inset-0 bg-black/0 group-hover/card:bg-black/[0.04] transition-colors duration-300" />
-            {/* Arrow */}
-            <div className="absolute top-4 right-4 bg-white rounded-full p-2 opacity-0 group-hover/card:opacity-100 transition-opacity duration-200 shadow-sm">
+            <div className="absolute top-3 right-3 bg-white rounded-full p-2 opacity-0 group-hover/card:opacity-100 transition-opacity duration-200 shadow-sm">
               <ArrowUpRight size={15} className="text-ink" strokeWidth={1.5} />
             </div>
           </>
@@ -103,12 +102,10 @@ export default function ProjectCard({
       </div>
 
       {/* Info */}
-      <div className="py-4 relative">
+      <div className="px-1 pb-1">
         <h3
           className={`font-sans font-semibold text-lg md:text-xl leading-snug mb-1.5 transition-colors duration-200 ${
-            isComingSoon
-              ? "text-ink/40"
-              : "text-ink group-hover/card:text-accent"
+            isComingSoon ? "text-ink/40" : "text-ink group-hover/card:text-accent"
           }`}
         >
           {project.title}
@@ -122,19 +119,19 @@ export default function ProjectCard({
           {project.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="text-[10px] text-stone bg-parchment px-2.5 py-[5px] rounded-full font-sans"
+              className="text-[10px] text-ink bg-[#EFEFEF] px-2.5 py-[5px] rounded-full font-sans"
             >
               {tag}
             </span>
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 
   if (isComingSoon) {
     return (
-      <div className={`group/card relative flex flex-col ${className}`}>
+      <div className={`group/card ${className}`}>
         {content}
       </div>
     );
@@ -143,7 +140,7 @@ export default function ProjectCard({
   return (
     <Link
       href={`/work/${project.slug}`}
-      className={`group/card relative flex flex-col ${className}`}
+      className={`group/card ${className}`}
     >
       {content}
     </Link>

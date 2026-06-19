@@ -14,16 +14,16 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-border"
     >
-      <nav className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+      <nav className="w-full px-8 md:px-16 h-20 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display font-bold text-xl text-ink hover:text-accent transition-colors"
+          className="font-display font-bold text-3xl text-ink hover:text-accent transition-colors"
         >
           NM.
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           <Link
             href="/"
             onClick={(e) => {
@@ -32,19 +32,19 @@ export default function Navbar() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }
             }}
-            className="text-sm text-stone hover:text-ink transition-colors"
+            className="text-base text-stone hover:text-ink transition-colors"
           >
             Work
           </Link>
           <Link
             href="/play"
-            className="text-sm text-stone hover:text-ink transition-colors"
+            className="text-base text-stone hover:text-ink transition-colors"
           >
             Play
           </Link>
           <Link
             href="/about"
-            className="text-sm text-stone hover:text-ink transition-colors"
+            className="text-base text-stone hover:text-ink transition-colors"
           >
             About
           </Link>
@@ -52,10 +52,10 @@ export default function Navbar() {
             href={RESUME_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-stone hover:text-ink transition-colors inline-flex items-center gap-1"
+            className="text-base text-stone hover:text-ink transition-colors inline-flex items-center gap-1"
           >
             Resume
-            <ArrowUpRight size={13} strokeWidth={1.5} />
+            <ArrowUpRight size={14} strokeWidth={1.5} />
           </a>
         </div>
 
