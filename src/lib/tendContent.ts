@@ -4,7 +4,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const header = {
-  kicker: "Self-directed · 2024",
+  kicker: "Tend — An AI Journaling App",
   title: "Designing & Shipping an AI Journaling App, Solo",
   description:
     "A journaling app where every entry grows a plant. Designed, built, and shipped independently through conversation with AI.",
