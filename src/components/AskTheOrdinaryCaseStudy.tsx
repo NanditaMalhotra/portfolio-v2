@@ -38,8 +38,8 @@ export default function AskTheOrdinaryCaseStudy() {
             Designing for conversation: what a system says, how it recovers, how it stays on-brand. A skill that only matters more as AI becomes the interface.
           </p>
           <div className="border-t border-border mb-8" />
-          <div className="flex gap-x-10">
-            <Meta label="Team" value="Myself + 1" nowrap />
+          <div className="grid grid-cols-2 md:flex md:gap-x-10 gap-y-5">
+            <Meta label="Team" value="Myself + 1" />
             <Meta label="What I did" value="Conversational UX Design · Research · Prototyping" />
             <Meta label="Skills" value="Research · Training Data · Sample Scripting · Bot Personality Design · Prototyping" />
             <Meta label="Tools" value="VoiceFlow · Figma · Miro · Google Suite" />

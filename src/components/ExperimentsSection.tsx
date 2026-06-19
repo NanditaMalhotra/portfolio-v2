@@ -13,7 +13,7 @@ const experiments = [
     type: "Writing",
     title: "Have We Named This Feeling Yet?",
     description:
-      "Exploring neo-emotions and the feelings that emerge at the edge of technology and human experience.",
+      "If you've ever asked AI to describe you based on everything it \"knows\" about you, this is for you.",
     href: "https://nanditamalhotra.substack.com/p/have-we-named-this-feeling-yet",
   },
   {

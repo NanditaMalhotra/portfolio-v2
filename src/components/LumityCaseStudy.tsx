@@ -43,8 +43,8 @@ export default function LumityCaseStudy() {
             Lumity is a social learning platform where users track and share what they&apos;re learning with a like-minded community. I led an end-to-end redesign to improve usability, visual consistency, and engagement, spanning research, architecture, usability testing, and design system.
           </p>
           <div className="border-t border-border mb-8" />
-          <div className="flex gap-x-10">
-            <Meta label="Team" value="UX team of 4, Project Manager, Developer, CEO" nowrap />
+          <div className="grid grid-cols-2 md:flex md:gap-x-10 gap-y-5">
+            <Meta label="Team" value="UX team of 4, Project Manager, Developer, CEO" />
             <Meta label="What I did" value="UX Design · UX Research" />
             <Meta label="Skills" value="Product Strategy · UX Design · Usability Testing · User Research · Systems Design" />
             <Meta label="Tools" value="Figma · FigJam · UXtweak · Useberry" />
@@ -399,7 +399,7 @@ export default function LumityCaseStudy() {
         </div>
         <div className="max-w-6xl mx-auto px-6 md:px-10">
         <AnimatedSection>
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-5">
+          <div className="grid grid-cols-6 md:grid-cols-5 gap-4 md:gap-5">
             {[
               {
                 src: "wo9ejJMFJ3lPcsQUSkHvqwUr08.gif",
@@ -431,8 +431,14 @@ export default function LumityCaseStudy() {
                 sub: "Track it. Own it. Celebrate it.",
                 detail: "Stay motivated with streaks, goals, and achievements that bring your learning journey to life.",
               },
-            ].map(({ src, label, sub, detail }) => (
-              <div key={src} className="flex flex-col gap-2">
+            ].map(({ src, label, sub, detail }, i) => (
+              <div
+                key={src}
+                className={`flex flex-col gap-2 col-span-2 md:col-span-1 ${
+                  i === 3 ? "col-start-2 md:col-auto" :
+                  i === 4 ? "col-start-4 md:col-auto" : ""
+                }`}
+              >
                 <ExpandableImage src={`${B}/${src}`} alt={label} containerClassName="rounded-2xl overflow-hidden" />
                 <p className="text-[11px] font-semibold text-ink font-sans leading-tight">{label}</p>
                 <p className="text-[11px] text-stone leading-tight font-medium">{sub}</p>

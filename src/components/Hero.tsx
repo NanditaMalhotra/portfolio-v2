@@ -32,7 +32,7 @@ export default function Hero() {
     <div className="flex flex-col gap-2">
 
       {/* ── Name card ── */}
-      <motion.div {...card(0.08)} className="border border-border rounded-2xl p-4">
+      <motion.div {...card(0.08)} className="bg-white border border-border rounded-2xl p-4">
         <h1
           ref={nameRef}
           className="name-clip font-display font-normal text-5xl leading-[1.06] tracking-tight cursor-default"
@@ -47,14 +47,14 @@ export default function Hero() {
       </motion.div>
 
       {/* ── Bio card ── */}
-      <motion.div {...card(0.16)} className="border border-border rounded-2xl p-4">
+      <motion.div {...card(0.16)} className="bg-white border border-border rounded-2xl p-4">
         <p className="text-[14px] text-stone leading-relaxed">
-          I&apos;m a product designer exploring how emerging technologies shape the systems we interact with. I move between creative disciplines with ease. What stays constant is the intent: intuitive, inclusive experiences worth building.
+          I design digital experiences at the intersection of UX and emerging technology. I&apos;m especially interested in what it means to practice design as AI reshapes the industry from the inside out.
         </p>
       </motion.div>
 
       {/* ── Worked With card ── */}
-      <motion.div {...card(0.24)} className="border border-border rounded-2xl p-4">
+      <motion.div {...card(0.24)} className="bg-white border border-border rounded-2xl p-4">
         <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
           Worked With
         </p>
@@ -75,7 +75,7 @@ export default function Hero() {
       </motion.div>
 
       {/* ── Education card ── */}
-      <motion.div {...card(0.3)} className="border border-border rounded-2xl p-4">
+      <motion.div {...card(0.3)} className="bg-white border border-border rounded-2xl p-4">
         <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
           Education
         </p>

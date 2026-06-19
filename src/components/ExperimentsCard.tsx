@@ -14,7 +14,7 @@ const experiments = [
     type: "Writing",
     title: "Have We Named This Feeling Yet?",
     description:
-      "Exploring neo-emotions and the feelings that emerge at the edge of technology and human experience.",
+      "If you've ever asked AI to describe you based on everything it \"knows\" about you, this is for you.",
     href: "https://nanditamalhotra.substack.com/p/have-we-named-this-feeling-yet",
   },
   {
@@ -28,7 +28,7 @@ const experiments = [
 
 export default function ExperimentsCard() {
   return (
-    <div className="border border-border rounded-2xl p-4">
+    <div className="bg-white border border-border rounded-2xl p-4">
       <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
         Experiments &amp; Writing
       </p>

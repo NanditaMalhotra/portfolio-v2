@@ -38,8 +38,8 @@ export default function BungeeCaseStudy() {
             Cooper Hewitt&apos;s Bungee font tester redesigned for WCAG 2.2 compliance, then extended with AI-generated audio to translate its visual richness into sound.
           </p>
           <div className="border-t border-border mb-8" />
-          <div className="flex gap-x-10">
-            <Meta label="Team" value="Team of 5" nowrap />
+          <div className="grid grid-cols-2 md:flex md:gap-x-10 gap-y-5">
+            <Meta label="Team" value="Team of 5" />
             <Meta label="What I did" value="Accessibility Design · Interaction Design · User Research" />
             <Meta label="Skills" value="WCAG 2.2 · Inclusive Design · Multi-Sensory Design · Generative AI · AI Integration" />
             <Meta label="Tools" value="Figma · Hume AI · FigJam" />

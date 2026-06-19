@@ -42,8 +42,8 @@ export default function ToyotaCaseStudy() {
             Ethnographic field research with Toyota North America, studying pedestrian behavior in NYC to challenge assumptions in urban safety system design.
           </p>
           <div className="border-t border-border mb-8" />
-          <div className="flex gap-x-10">
-            <Meta label="Team" value="Individual" nowrap />
+          <div className="grid grid-cols-2 md:flex md:gap-x-10 gap-y-5">
+            <Meta label="Team" value="Individual" />
             <Meta label="What I did" value="UX Research · Ethnographic Research · Contextual Inquiry" />
             <Meta label="Skills" value="Ethnography · Field Research · Contextual Inquiry · Insight Synthesis" />
             <Meta label="Tools" value="Figma · FigJam · Panelfox" />
