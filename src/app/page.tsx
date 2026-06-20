@@ -11,7 +11,7 @@ export default function Home() {
       <div className="lg:hidden">
 
         {/* Compact bio */}
-        <div className="pt-20 pb-8 border-b border-border mb-8">
+        <div className="pt-36 pb-8 border-b border-border mb-8">
           <h1 className="font-display text-4xl leading-tight text-ink mb-1">
             Nandita Malhotra
           </h1>
@@ -19,7 +19,7 @@ export default function Home() {
             Product Designer · New York
           </p>
           <p className="text-[14px] text-stone leading-relaxed mb-6">
-            I&apos;m a product designer exploring how emerging technologies shape the systems we interact with. I move between creative disciplines with ease. What stays constant is the intent: intuitive, inclusive experiences worth building.
+            I design digital experiences at the intersection of UX and emerging technology. I&apos;m especially interested in what it means to practice design as AI reshapes the industry from the inside out.
           </p>
           <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
             Worked With
