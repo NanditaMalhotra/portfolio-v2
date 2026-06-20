@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const entries = [
   { company: "Hu Capital", title: "Product Designer", year: "2026 – Present" },
@@ -14,27 +14,29 @@ const entries = [
   { company: "Hook'd Magazine", title: "Creative Director", year: "2020 – 2022" },
 ];
 
+const TRACK_H = 220;
+
 export default function ExperienceCard() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [thumbTop, setThumbTop] = useState(0);
-  const [thumbHeight, setThumbHeight] = useState(0);
-
-  const TRACK_H = 220;
+  const thumbRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const el = scrollRef.current;
-    if (!el) return;
+    const thumb = thumbRef.current;
+    if (!el || !thumb) return;
 
     const update = () => {
       const { scrollTop, scrollHeight, clientHeight } = el;
       const ratio = clientHeight / scrollHeight;
-      setThumbHeight(Math.max(ratio * TRACK_H, 28));
-      setThumbTop((scrollTop / (scrollHeight - clientHeight)) * (TRACK_H - Math.max(ratio * TRACK_H, 28)));
+      const h = Math.max(ratio * TRACK_H, 28);
+      const top = scrollTop / (scrollHeight - clientHeight) * (TRACK_H - h);
+      thumb.style.height = `${h}px`;
+      thumb.style.top = `${top}px`;
     };
 
     update();
-    el.addEventListener("scroll", update);
-    window.addEventListener("resize", update);
+    el.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
     return () => {
       el.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
@@ -45,7 +47,7 @@ export default function ExperienceCard() {
     <div className="col-span-2 md:col-span-1 bg-white border border-border rounded-2xl p-5 flex flex-col gap-3">
       <p className="text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans">Experience</p>
       <div className="flex gap-2">
-        <style>{`[data-exp-scroll]::-webkit-scrollbar { display: none; }`}</style>
+        <style>{`[data-exp-scroll]::-webkit-scrollbar{display:none}`}</style>
         <div
           ref={scrollRef}
           data-exp-scroll
@@ -68,12 +70,8 @@ export default function ExperienceCard() {
           ))}
         </div>
 
-        {/* Custom scrollbar track */}
         <div className="relative shrink-0 w-1 rounded-full bg-stone/10" style={{ height: `${TRACK_H}px` }}>
-          <div
-            className="absolute w-full rounded-full bg-stone/40 transition-[top] duration-75"
-            style={{ top: thumbTop, height: thumbHeight }}
-          />
+          <div ref={thumbRef} className="absolute w-full rounded-full bg-stone/40" style={{ top: 0, height: 28 }} />
         </div>
       </div>
     </div>
