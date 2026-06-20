@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { X, Volume2, VolumeX } from "lucide-react";
 
 interface Props {
@@ -22,6 +22,15 @@ export default function ExpandableVideo({
   const [open, setOpen] = useState(false);
   const [muted, setMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const tryPlay = () => video.play().catch(() => {});
+    video.addEventListener("canplay", tryPlay);
+    tryPlay();
+    return () => video.removeEventListener("canplay", tryPlay);
+  }, []);
 
   function toggleSound(e: React.MouseEvent) {
     e.stopPropagation();

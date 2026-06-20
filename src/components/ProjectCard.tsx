@@ -18,10 +18,12 @@ function AutoplayVideo({ src, objectPosition }: { src: string; objectPosition?: 
     const video = ref.current;
     if (!video) return;
 
+    const tryPlay = () => video.play().catch(() => {});
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play().catch(() => {});
+          tryPlay();
         } else {
           video.pause();
         }
@@ -31,13 +33,18 @@ function AutoplayVideo({ src, objectPosition }: { src: string; objectPosition?: 
 
     observer.observe(video);
 
+    video.addEventListener("canplay", tryPlay);
+
     const onVisible = () => {
-      if (!document.hidden) video.play().catch(() => {});
+      if (!document.hidden) tryPlay();
     };
     document.addEventListener("visibilitychange", onVisible);
 
+    tryPlay();
+
     return () => {
       observer.disconnect();
+      video.removeEventListener("canplay", tryPlay);
       document.removeEventListener("visibilitychange", onVisible);
     };
   }, []);

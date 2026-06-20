@@ -4,7 +4,7 @@
   --color-cream: #ffffff;
   --color-ink: #111111;
   --color-stone: #6B6880;
-  --color-accent: #C98A00;
+  --color-accent: #653FD4;
   --color-parchment: #F3F2F8;
   --color-border: #E8E8EC;
 
@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-  background-color: #FDF0C0;
+  background-color: #EDE8FF;
 }
 
 /* Purple-circle-through-text effect — position driven by CSS custom props set via JS */
@@ -35,7 +35,7 @@ body {
   --cy: 50%;
   background: radial-gradient(
     circle 240px at var(--cx) var(--cy),
-    #C98A00 0%,
+    #653FD4 0%,
     #111111 65%
   );
   -webkit-background-clip: text;

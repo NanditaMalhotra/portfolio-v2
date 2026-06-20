@@ -6,6 +6,7 @@ import BookCard from "@/components/BookCard";
 import ToolsCard from "@/components/ToolsCard";
 import WearingCard from "@/components/WearingCard";
 import AboutReel from "@/components/AboutReel";
+import ExperienceCard from "@/components/ExperienceCard";
 
 export const metadata: Metadata = {
   title: "About — Nandita Malhotra",
@@ -41,34 +42,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="col-span-2 md:col-span-1 bg-white border border-border rounded-2xl p-5 flex flex-col gap-3">
-                <p className="text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans">Experience</p>
-                <div className="relative">
-                <div className="flex flex-col gap-4 overflow-y-scroll pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-stone/40 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-stone/10" style={{ maxHeight: "220px" }}>
-                  {[
-                    { company: "Hu Capital", title: "Product Designer", year: "2026 – Present" },
-                    { company: "The Amplification Project", title: "Product Designer", year: "2026 – Present" },
-                    { company: "Sewa International", title: "UX Writer & Content Designer", year: "2025 – 2026" },
-                    { company: "Center for Digital Experiences, Pratt", title: "UX Consultant", year: "2023 – 2025", clients: ["Cooper Hewitt, Smithsonian", "Toyota Motor", "Lumity", "Afro Brazil Arts"] },
-                    { company: "Hook'd Magazine", title: "Creative Director", year: "2020 – 2022" },
-                  ].map(({ company, title, year, clients }) => (
-                    <div key={company} className="flex flex-col gap-0.5">
-                      <p className="text-sm font-medium text-ink leading-snug">{company}</p>
-                      <p className="text-[11px] text-stone font-sans">{title}</p>
-                      <p className="text-[10px] text-stone/50 font-sans tracking-wide">{year}</p>
-                      {clients && (
-                        <ul className="mt-1 flex flex-col gap-0.5 pl-3">
-                          {clients.map((c) => (
-                            <li key={c} className="text-[11px] text-stone font-sans list-disc">{c}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
-                </div>
-                <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent rounded-b-xl" />
-                </div>
-              </div>
+              <ExperienceCard />
 
               {/* ── Row 2: Wearing (col1, row-span-2) | Music (col2-3) ── */}
               <WearingCard />
