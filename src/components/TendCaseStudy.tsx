@@ -262,12 +262,13 @@ export default function TendCaseStudy() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.05}>
-          <div className="grid grid-cols-[1fr_180px] gap-6 my-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_180px] gap-6 my-8 md:items-stretch">
             <ChatSnippet messages={sections.precision.chat} />
             <ExpandableVideo
               src="/case-studies/tend/demo-plant.mp4"
-              containerClassName="rounded-2xl overflow-hidden h-full"
-              videoClassName="w-full h-full object-cover"
+              containerClassName="rounded-2xl overflow-hidden md:h-full mx-auto"
+              containerStyle={{ maxWidth: "200px" }}
+              videoClassName="w-full h-auto md:h-full md:object-cover"
             />
           </div>
         </AnimatedSection>
@@ -319,7 +320,7 @@ export default function TendCaseStudy() {
             src="/case-studies/tend/onboarding.png"
             alt="How do you want to write — mode selection"
             containerClassName="rounded-2xl overflow-hidden mt-8"
-            containerStyle={{ height: "580px" }}
+            containerStyle={{ height: "clamp(320px, 60vw, 580px)" }}
             imgClassName="h-full object-cover object-bottom"
           />
         </AnimatedSection>

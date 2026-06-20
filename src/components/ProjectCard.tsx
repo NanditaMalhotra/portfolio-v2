@@ -22,6 +22,8 @@ function AutoplayVideo({ src, objectPosition }: { src: string; objectPosition?: 
       ([entry]) => {
         if (entry.isIntersecting) {
           video.play().catch(() => {});
+        } else {
+          video.pause();
         }
       },
       { threshold: 0.1 }
@@ -48,6 +50,7 @@ function AutoplayVideo({ src, objectPosition }: { src: string; objectPosition?: 
       loop
       muted
       playsInline
+      preload="auto"
       className="absolute inset-0 w-full h-full object-cover scale-[1.02]"
       style={objectPosition ? { objectPosition } : undefined}
     />

@@ -24,7 +24,7 @@ export default function About() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
 
               {/* ── Row 0: Video (full width) ── */}
-              <div className="col-span-2 md:col-span-3 bg-white border border-border rounded-2xl p-5">
+              <div className="col-span-2 md:col-span-3 md:bg-white md:border md:border-border md:rounded-2xl md:p-5">
                 <div className="w-full overflow-hidden rounded-xl" style={{ aspectRatio: "4/2" }}>
                   <video autoPlay muted loop playsInline aria-hidden="true" className="w-full h-full object-cover" style={{ objectPosition: "center 40%" }}>
                     <source src="/about/reel.mp4" type="video/mp4" />

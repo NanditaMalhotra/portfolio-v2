@@ -66,15 +66,24 @@ export default function BookCard() {
   return (
     <>
       {/* ── Book card ── */}
-      <div className="bg-white border border-border rounded-2xl flex min-h-[140px]">
-        <div className="flex-1 flex flex-col justify-between min-w-0 p-5">
+      <div className="bg-white border border-border rounded-2xl flex flex-col md:flex-row min-h-[140px]">
+        <div className="flex items-center justify-center p-5 md:hidden">
+          <div style={{ perspective: "500px", transform: "rotate(6deg)", width: "80px" }}>
+            <div style={{ position: "relative", width: "80px", height: "116px", transform: "rotateY(-18deg)", boxShadow: "10px 14px 32px rgba(0,0,0,0.3)" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`https://covers.openlibrary.org/b/id/${currentBook.coverId}-L.jpg`} alt={currentBook.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", borderRadius: "1px 3px 3px 1px", display: "block" }} />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(0,0,0,0.35) 0%, transparent 35%)", borderRadius: "1px 3px 3px 1px" }} />
+            </div>
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col justify-between min-w-0 p-5 md:pt-5 pt-0">
           <p className="text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans">Currently Reading</p>
           <div>
             <p className="text-xl font-bold text-ink leading-snug">{currentBook.title}</p>
             <p className="text-xs text-stone mt-1">{currentBook.author}</p>
           </div>
         </div>
-        <div className="flex items-center justify-center shrink-0 p-4" style={{ width: "35%" }}>
+        <div className="hidden md:flex items-center justify-center shrink-0 p-4" style={{ width: "35%" }}>
           <div style={{ perspective: "500px", transform: "rotate(6deg)", width: "100%", maxWidth: "100px" }}>
             <div style={{ position: "relative", width: "100%", paddingBottom: "145%", transform: "rotateY(-18deg)", boxShadow: "10px 14px 32px rgba(0,0,0,0.3)" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
