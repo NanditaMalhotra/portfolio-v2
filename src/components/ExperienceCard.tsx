@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 const entries = [
-  { company: "Hu Capital", title: "Product Designer", year: "2026 – Present" },
+  { company: "HuCapital", title: "Product Designer", year: "2026 – Present" },
   { company: "The Amplification Project", title: "Product Designer", year: "2026 – Present" },
   { company: "Sewa International", title: "UX Writer & Content Designer", year: "2025 – 2026" },
   {
