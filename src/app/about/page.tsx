@@ -5,6 +5,7 @@ import MusicCard from "@/components/MusicCard";
 import BookCard from "@/components/BookCard";
 import ToolsCard from "@/components/ToolsCard";
 import WearingCard from "@/components/WearingCard";
+import AboutReel from "@/components/AboutReel";
 
 export const metadata: Metadata = {
   title: "About — Nandita Malhotra",
@@ -26,9 +27,7 @@ export default function About() {
               {/* ── Row 0: Video (full width) ── */}
               <div className="col-span-2 md:col-span-3 md:bg-white md:border md:border-border md:rounded-2xl md:p-5">
                 <div className="w-full overflow-hidden rounded-xl" style={{ aspectRatio: "4/2" }}>
-                  <video autoPlay muted loop playsInline aria-hidden="true" className="w-full h-full object-cover" style={{ objectPosition: "center 40%" }}>
-                    <source src="/about/reel.mp4" type="video/mp4" />
-                  </video>
+                  <AboutReel />
                 </div>
               </div>
 
@@ -44,7 +43,8 @@ export default function About() {
 
               <div className="col-span-2 md:col-span-1 bg-white border border-border rounded-2xl p-5 flex flex-col gap-3">
                 <p className="text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans">Experience</p>
-                <div className="flex flex-col gap-4 overflow-y-scroll pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-stone/30 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-stone/10" style={{ maxHeight: "220px" }}>
+                <div className="relative">
+                <div className="flex flex-col gap-4 overflow-y-scroll pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-stone/40 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-stone/10" style={{ maxHeight: "220px" }}>
                   {[
                     { company: "Hu Capital", title: "Product Designer", year: "2026 – Present" },
                     { company: "The Amplification Project", title: "Product Designer", year: "2026 – Present" },
@@ -65,6 +65,8 @@ export default function About() {
                       )}
                     </div>
                   ))}
+                </div>
+                <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent rounded-b-xl" />
                 </div>
               </div>
 

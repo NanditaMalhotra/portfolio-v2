@@ -67,6 +67,8 @@ export default function BookCard() {
     <>
       {/* ── Book card ── */}
       <div className="bg-white border border-border rounded-2xl flex flex-col md:flex-row min-h-[140px]">
+        {/* Mobile: Currently Reading label above image */}
+        <p className="md:hidden text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans px-5 pt-5">Currently Reading</p>
         <div className="flex items-center justify-center p-5 md:hidden">
           <div style={{ perspective: "500px", transform: "rotate(6deg)", width: "80px" }}>
             <div style={{ position: "relative", width: "80px", height: "116px", transform: "rotateY(-18deg)", boxShadow: "10px 14px 32px rgba(0,0,0,0.3)" }}>
@@ -76,8 +78,8 @@ export default function BookCard() {
             </div>
           </div>
         </div>
-        <div className="flex-1 flex flex-col justify-between min-w-0 p-5 md:pt-5 pt-0">
-          <p className="text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans">Currently Reading</p>
+        <div className="flex-1 flex flex-col justify-end md:justify-between min-w-0 p-5 md:pt-5 pt-0">
+          <p className="hidden md:block text-[9px] tracking-[0.2em] uppercase text-stone/50 font-sans">Currently Reading</p>
           <div>
             <p className="text-xl font-bold text-ink leading-snug">{currentBook.title}</p>
             <p className="text-xs text-stone mt-1">{currentBook.author}</p>
