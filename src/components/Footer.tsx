@@ -22,24 +22,6 @@ export default function Footer() {
             LinkedIn
             <ArrowUpRight size={12} strokeWidth={1.5} />
           </a>
-          <a
-            href="https://x.com/nanditaxoxo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-ink transition-colors inline-flex items-center gap-0.5"
-          >
-            X
-            <ArrowUpRight size={12} strokeWidth={1.5} />
-          </a>
-          <a
-            href="https://nanditamalhotra.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-ink transition-colors inline-flex items-center gap-0.5"
-          >
-            Writing
-            <ArrowUpRight size={12} strokeWidth={1.5} />
-          </a>
         </div>
       </div>
     </footer>

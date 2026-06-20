@@ -242,7 +242,7 @@ export default function AskTheOrdinaryCaseStudy() {
                 text: "If no suitable answer existed, the script needed a redirect rather than a dead end.",
               },
             ].map(({ img, alt, label, text }) => (
-              <div key={label} className="grid grid-cols-2 gap-8 items-center">
+              <div key={label} className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
                 <ExpandableImage src={img} alt={alt} containerClassName="rounded-2xl overflow-hidden" />
                 <div>
                   <p className="text-sm font-medium text-ink mb-2">{label}</p>
@@ -294,7 +294,7 @@ export default function AskTheOrdinaryCaseStudy() {
         <div className="max-w-3xl mx-auto px-6 md:px-10 mb-14">
           <AnimatedSection>
             <Label>The Prototype</Label>
-            <h2 className="text-2xl md:text-[36px] font-sans font-medium text-ink leading-tight whitespace-nowrap">
+            <h2 className="text-2xl md:text-[36px] font-sans font-medium text-ink leading-tight">
               Three core flows, prototyped in VoiceFlow.
             </h2>
           </AnimatedSection>
