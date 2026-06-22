@@ -32,7 +32,7 @@ export default function Icon() {
             letterSpacing: "-0.3px",
           }}
         >
-          NM.
+          NM
         </span>
       </div>
     ),
