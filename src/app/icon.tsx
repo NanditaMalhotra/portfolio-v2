@@ -7,7 +7,7 @@ export const contentType = "image/png";
 
 export default function Icon() {
   const font = readFileSync(
-    join(process.cwd(), "node_modules/@fontsource/museomoderno/files/museomoderno-latin-700-normal.woff")
+    join(process.cwd(), "node_modules/@fontsource/museomoderno/files/museomoderno-latin-900-normal.woff")
   );
 
   return new ImageResponse(
@@ -26,7 +26,7 @@ export default function Icon() {
         <span
           style={{
             fontFamily: "MuseoModerno",
-            fontWeight: 700,
+            fontWeight: 900,
             fontSize: 11,
             color: "#ffffff",
             letterSpacing: "-0.3px",
@@ -38,7 +38,7 @@ export default function Icon() {
     ),
     {
       ...size,
-      fonts: [{ name: "MuseoModerno", data: font, weight: 700 }],
+      fonts: [{ name: "MuseoModerno", data: font, weight: 900 }],
     }
   );
 }
