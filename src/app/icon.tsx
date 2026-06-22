@@ -20,16 +20,14 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          borderRadius: 7,
-          padding: 3,
         }}
       >
         <span
           style={{
             fontFamily: "MuseoModerno",
             fontWeight: 700,
-            fontSize: 17,
-            color: "#3B1A7E",
+            fontSize: 13,
+            color: "#7B5CF0",
             letterSpacing: "-0.3px",
           }}
         >
