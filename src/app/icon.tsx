@@ -16,11 +16,12 @@ export default function Icon() {
         style={{
           width: 32,
           height: 32,
-          background: "#111111",
+          background: "#653FD4",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 7,
+          padding: 3,
         }}
       >
         <span
