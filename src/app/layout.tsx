@@ -20,11 +20,11 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Nandita Malhotra",
+  title: "Nandita Malhotra — Product Designer",
   description:
     "Product designer creating inclusive digital experiences at the intersection of research, systems thinking, and visual craft.",
   openGraph: {
-    title: "Nandita Malhotra",
+    title: "Nandita Malhotra — Product Designer",
     description:
       "Product designer creating inclusive digital experiences at the intersection of research, systems thinking, and visual craft.",
     type: "website",
