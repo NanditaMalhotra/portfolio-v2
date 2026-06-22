@@ -16,18 +16,19 @@ export default function Icon() {
         style={{
           width: 32,
           height: 32,
-          background: "#ffffff",
+          background: "#111111",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          borderRadius: 7,
         }}
       >
         <span
           style={{
             fontFamily: "MuseoModerno",
             fontWeight: 700,
-            fontSize: 15,
-            color: "#111111",
+            fontSize: 17,
+            color: "#ffffff",
             letterSpacing: "-0.3px",
           }}
         >
