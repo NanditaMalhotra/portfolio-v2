@@ -16,7 +16,10 @@ export default function Icon() {
         style={{
           width: 32,
           height: 32,
-          background: "transparent",
+          width: 32,
+          height: 32,
+          background: "#653FD4",
+          borderRadius: 16,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -27,7 +30,7 @@ export default function Icon() {
             fontFamily: "MuseoModerno",
             fontWeight: 700,
             fontSize: 13,
-            color: "#7B5CF0",
+            color: "#ffffff",
             letterSpacing: "-0.3px",
           }}
         >
