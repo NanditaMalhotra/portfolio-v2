@@ -27,7 +27,7 @@ export default function Icon() {
           style={{
             fontFamily: "MuseoModerno",
             fontWeight: 700,
-            fontSize: 13,
+            fontSize: 11,
             color: "#ffffff",
             letterSpacing: "-0.3px",
           }}
