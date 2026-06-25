@@ -49,7 +49,7 @@ export default function Hero() {
       {/* ── Bio card ── */}
       <motion.div {...card(0.16)} className="bg-white border border-border rounded-2xl p-4">
         <p className="text-[14px] text-stone leading-relaxed">
-          I design digital experiences at the intersection of UX and emerging technology. I&apos;m especially interested in what it means to practice design as AI reshapes the industry from the inside out.
+          I design digital experiences at the intersection of UX and emerging technology. I specialize in what it means to practice design as AI reshapes the industry from the inside out.
         </p>
       </motion.div>
 

@@ -19,7 +19,7 @@ export default function Home() {
             Product Designer · New York
           </p>
           <p className="text-[14px] text-stone leading-relaxed mb-6">
-            I design digital experiences at the intersection of UX and emerging technology. I&apos;m especially interested in what it means to practice design as AI reshapes the industry from the inside out.
+            I design digital experiences at the intersection of UX and emerging technology. I specialize in what it means to practice design as AI reshapes the industry from the inside out.
           </p>
           <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
             Worked With
