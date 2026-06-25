@@ -59,8 +59,8 @@ export default function Home() {
       <div className="hidden lg:grid grid-cols-[2fr_3fr] gap-16">
 
         {/* Bio — sticky sidebar */}
-        <div>
-          <div className="sticky top-16 pt-10 pb-10 pr-4">
+        <div className="pt-28">
+          <div className="sticky top-28 pb-10 pr-4">
             <Hero />
           </div>
         </div>
