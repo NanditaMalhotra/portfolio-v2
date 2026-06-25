@@ -35,11 +35,15 @@ export default function Home() {
           </p>
           <div className="flex flex-col gap-2.5">
             <div className="flex items-center gap-2.5">
-              <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-4 w-7 shrink-0 object-left object-contain" />
+              <div className="w-8 shrink-0 flex items-center">
+                <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-4 w-auto" />
+              </div>
               <p className="text-[12px] text-stone">MS, Information Experience Design</p>
             </div>
             <div className="flex items-center gap-2.5">
-              <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-4 w-7 shrink-0 object-left object-contain" />
+              <div className="w-8 shrink-0 flex items-center">
+                <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-4 w-auto" />
+              </div>
               <p className="text-[12px] text-stone">BFA, Visual &amp; Communications Design</p>
             </div>
           </div>
