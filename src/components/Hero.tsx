@@ -81,11 +81,11 @@ export default function Hero() {
         </p>
         <div className="flex flex-col gap-3">
           <a href="https://www.pratt.edu" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3">
-            <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-5 w-auto mt-0.5 shrink-0" />
+            <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-5 w-8 mt-0.5 shrink-0 object-left object-contain" />
             <p className="text-[12px] text-stone leading-snug">MS, Information Experience Design</p>
           </a>
           <a href="https://www.utexas.edu" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3">
-            <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-5 w-auto mt-0.5 shrink-0" />
+            <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-5 w-8 mt-0.5 shrink-0 object-left object-contain" />
             <p className="text-[12px] text-stone leading-snug">BFA, Visual Communication Design</p>
           </a>
         </div>
