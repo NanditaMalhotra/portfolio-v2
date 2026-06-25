@@ -44,7 +44,7 @@ export default function Home() {
               <div className="w-8 shrink-0 flex items-center">
                 <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-4 w-auto" />
               </div>
-              <p className="text-[12px] text-stone">BFA, Visual &amp; Communications Design</p>
+              <p className="text-[12px] text-stone">BFA, Visual Communication Design</p>
             </div>
           </div>
         </div>

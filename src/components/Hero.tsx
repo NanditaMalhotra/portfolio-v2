@@ -79,18 +79,14 @@ export default function Hero() {
         <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
           Education
         </p>
-        <div className="flex flex-col gap-3">
-          <a href="https://www.pratt.edu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
-            <div className="w-10 shrink-0 flex items-center">
-              <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-7 w-auto" />
-            </div>
-            <p className="text-[12px] text-stone leading-snug">MS, Information Experience Design</p>
+        <div className="grid gap-y-3" style={{ gridTemplateColumns: "auto 1fr", columnGap: "12px" }}>
+          <a href="https://www.pratt.edu" target="_blank" rel="noopener noreferrer" className="contents">
+            <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-7 w-auto self-center" />
+            <p className="text-[12px] text-stone leading-snug self-center">MS, Information Experience Design</p>
           </a>
-          <a href="https://www.utexas.edu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
-            <div className="w-10 shrink-0 flex items-center">
-              <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-7 w-auto" />
-            </div>
-            <p className="text-[12px] text-stone leading-snug">BFA, Visual Communication Design</p>
+          <a href="https://www.utexas.edu" target="_blank" rel="noopener noreferrer" className="contents">
+            <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-6 w-auto self-center" />
+            <p className="text-[12px] text-stone leading-snug self-center">BFA, Visual Communication Design</p>
           </a>
         </div>
       </motion.div>
