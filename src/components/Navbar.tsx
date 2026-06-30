@@ -4,8 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
-const RESUME_URL =
-  "https://drive.google.com/file/d/14HJ-a9m9lg25-oCIiBNKXh9WkEPtlj4o/view?usp=sharing";
+const RESUME_URL = "/resume.pdf";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
