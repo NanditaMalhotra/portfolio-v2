@@ -84,12 +84,18 @@ export default function Hero() {
         </p>
         <div className="grid gap-y-3" style={{ gridTemplateColumns: "auto 1fr", columnGap: "12px" }}>
           <a href="https://www.pratt.edu" target="_blank" rel="noopener noreferrer" className="contents">
-            <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-5 w-auto self-center" />
-            <p className="text-[12px] text-stone leading-snug self-center">MS, Information Experience Design</p>
+            <img src="/logos/pratt-badge.png" alt="Pratt Institute" className="h-9 w-9 rounded-md self-center" />
+            <div className="self-center">
+              <p className="text-[12px] text-ink font-medium leading-snug">Pratt Institute</p>
+              <p className="text-[12px] text-stone leading-snug">MS, Information Experience Design</p>
+            </div>
           </a>
           <a href="https://www.utexas.edu" target="_blank" rel="noopener noreferrer" className="contents">
-            <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-5 w-auto self-center" />
-            <p className="text-[12px] text-stone leading-snug self-center">BFA, Visual Communication Design</p>
+            <img src="/logos/ut-austin-badge.jpg" alt="UT Austin" className="h-9 w-9 rounded-md self-center" />
+            <div className="self-center">
+              <p className="text-[12px] text-ink font-medium leading-snug">The University of Texas at Austin</p>
+              <p className="text-[12px] text-stone leading-snug">BFA, Design and Visual Communication</p>
+            </div>
           </a>
         </div>
       </motion.div>

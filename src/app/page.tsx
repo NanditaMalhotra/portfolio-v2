@@ -37,15 +37,21 @@ export default function Home() {
           <div className="flex flex-col gap-2.5">
             <div className="flex items-center gap-2.5">
               <div className="w-8 shrink-0 flex items-center">
-                <img src="/pratt-logo.svg" alt="Pratt Institute" className="h-4 w-auto" />
+                <img src="/logos/pratt-badge.png" alt="Pratt Institute" className="h-8 w-8 rounded-md" />
               </div>
-              <p className="text-[12px] text-stone">MS, Information Experience Design</p>
+              <div>
+                <p className="text-[12px] text-ink font-medium">Pratt Institute</p>
+                <p className="text-[12px] text-stone">MS, Information Experience Design</p>
+              </div>
             </div>
             <div className="flex items-center gap-2.5">
               <div className="w-8 shrink-0 flex items-center">
-                <img src="/ut-austin-logo.svg" alt="UT Austin" className="h-4 w-auto" />
+                <img src="/logos/ut-austin-badge.jpg" alt="UT Austin" className="h-8 w-8 rounded-md" />
               </div>
-              <p className="text-[12px] text-stone">BFA, Visual Communication Design</p>
+              <div>
+                <p className="text-[12px] text-ink font-medium">The University of Texas at Austin</p>
+                <p className="text-[12px] text-stone">BFA, Design and Visual Communication</p>
+              </div>
             </div>
           </div>
         </div>
