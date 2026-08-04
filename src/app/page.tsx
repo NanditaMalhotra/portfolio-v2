@@ -29,6 +29,7 @@ export default function Home() {
             <img src="/logos/cooper-hewitt.svg" alt="Cooper Hewitt" className="h-4 w-auto" />
             <img src="/logos/hucapital.svg" alt="HuCapital" className="h-4 w-auto" />
             <img src="/logos/dxcenter.png" alt="DxCenter" className="h-4 w-auto" />
+            <img src="/logos/rita.png" alt="Rita" className="h-4 w-auto" />
           </div>
           <p className="text-[9px] tracking-[0.2em] uppercase text-stone mb-3 font-sans">
             Education

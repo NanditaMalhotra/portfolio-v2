@@ -71,6 +71,9 @@ export default function Hero() {
           <a href="https://dxcenter.pratt.edu" target="_blank" rel="noopener noreferrer">
             <img src="/logos/dxcenter.png" alt="DxCenter" className="h-5 w-auto" />
           </a>
+          <a href="https://www.linkedin.com/company/ritagroup" target="_blank" rel="noopener noreferrer">
+            <img src="/logos/rita.png" alt="Rita" className="h-5 w-auto" />
+          </a>
         </div>
       </motion.div>
 
